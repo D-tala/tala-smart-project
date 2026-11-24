@@ -1,69 +1,341 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tala SmartFarm</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
- <!-- Header Section/Navigation  -->
-  <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TALA AgroTech</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" sizes="32*32" href="/images/logo.png" />
+  </head>
+  <body>
+    <!-- header/navigation -->
+    <header>
       <nav class="navbar">
-        <div class="logo">
-          <h1>Tala SmartFarm</h1>
+        <div class="container">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="images/logo.png"
+                alt="TALA AgroTech "
+                class="logo-image"
+              />
+            </a>
+          </div>
+          <h1>TALA AgroTech</h1>
+          <span class="menu-icon" onclick="toggleMenu.hidden ^= 1">
+            <i class="fas fa-bars"></i>,</span
+          >
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#livestock">Livestock</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#crop ">Crop Production</a></li>
+            <a class="btn btn-primary" href="#">
+              <i class="fas fa-user"></i>😊 View Dashboard</a
+            >
+          </ul>
         </div>
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#technology">Technologies</a></li>
-          <li><a href="#contact">Contact</a></li>
-    
-    
-        </ul>
       </nav>
+      <script>
+        function toggleMenu() {
+          const nav = document.getElementById("navLinks");
+          nav.classList.toggle("active");
+        }
+      </script>
+      <input type="text" class="search-bar" placeholder="Search..." />
     </header>
-  
-    <!-- Main Content -->
-    <main>
-      <!-- Home Section -->
-      <section id="home" class="home-section">
-        <h2>Welcome to Tala SmartFarm</h2>
-        <p>Revolutionizing agriculture with modern technology.</p>
-      </section>
-  
-      <!-- About Us Section -->
-      <section id="about" class="about-section">
-        <h2>About Us</h2>
-        <p>Tala SmartFarm is dedicated to improving agricultural practices through innovative technology. Our mission is to empower farmers with smart solutions for sustainable farming.</p>
-      </section>
-  
-      <!-- Projects Section -->
-      <section id="projects" class="projects-section">
-        <h2>Our Projects</h2>
-        <div class="project-list">
-          <!-- Project 1 -->
-          <div class="project-item">
-            <h3>Smart Irrigation System</h3>
-            <p>A system that optimizes water usage based on soil moisture levels and weather forecasts.</p>
-          </div>
-          <!-- Project 2 -->
-          <div class="project-item">
-            <h3>Crop Monitoring Drone</h3>
-            <p>A drone equipped with sensors to monitor crop health and provide real-time data to farmers.</p>
-          </div>
-          <!-- Project 3 -->
-          <div class="project-item">
-            <h3>Automated Harvesting Robot</h3>
-            <p>A robot designed to assist with harvesting crops efficiently and reduce labor costs.</p>
-          </div>
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h1>Welcome to TALA AgroTech</h1>
+      <p>Revolutionizing agriculture with modern farming & technology.</p>
+      <button><div class="btn">Explore More</div></button>
+      <div class="hero-image">
+        <img src="images/hero.jpg" alt="Tala AgroTech" />
+      </div>
+    </section>
+    <!-- FEATURES -->
+    <section class="features">
+      <div class="feature-box">
+        <h3>Modern Farming</h3>
+        <p>Using technology for better farm productivity.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Sustainable Tech</h3>
+        <p>Environment friendly farming technology.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Organic Growth</h3>
+        <p>Healthy and natural farming practices.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Eco Friendly</h3>
+        <p>Protecting nature while farming.</p>
+      </div>
+    </section>
+    <div class="my-image">
+      <img src="images/tala.png" alt="Tala AgroTech" />
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+      <h2>About Us</h2>
+      <p>
+        • Tala AgroTech is dedicated to improving agricultural practices through
+        innovative technology. Our mission is to empower farmers with smart
+        solutions for sustainable farming. Welcome to our Smart Farm -a place
+        where modern farming and hardwork come together.We are small but
+        passionate who believe that Agriculture should not just be farming but
+        modernised farming. This website was built from a simple idea: modern
+        technology should feel exciting ,friendly,and accessible to everyone,not
+        complicated or intimidating.
+        <br />
+      </p>
+      <p>
+        • Our journey began a curiosity to explore how modern methods can make
+        agriculture more beneficial. We wanted to create something that people
+        could interact with, learn from, and grow at the same time. What started
+        as a simple project has grown into a platform where imagination meets
+        functionality.Every feature you see here is designed with the intention
+        of makng your farming smooth,engaging, and sustainable.
+        <br />
+      </p>
+      <p>
+        • At the heart of our work is a strong belief in creativity and working
+        smart.We focus on building methods that are easy to use while still
+        bearing profitable returns.
+        <br />
+        Everything is carefully designed to give you value without overwhelming
+        you.
+      </p>
+      <p>
+        • Our <i>Mission</i>:implementing innovative agricultural practices and
+        technology to maximize yields sustainably, delivering
+        reliable,affordable food to market.
+        <br />
+        We aim to raise healthy animals using holistic grazing practices
+        ,ensuring environmental stewardship and premium product quality.
+      </p>
+      <p>
+        • Our <i>Vision</i>:To be a leader in sustainable, technology-driven
+        agriculture that supports global food security.
+        <br />
+        We are looking ahead to build a robust rural economy where ecological
+        agriculture flourishes.
+      </p>
+      <p>
+        • Everything here is built with genuine effort and willingness to try
+        new things.We believe that great ideas don't have to be perfect-they
+        just have to start somewhere.
+      </p>
+      <p>
+        • Thank you for being part of this journey.Whether you're here to
+        explore,learn or implement,we're glad you stopped by.
+        <br />
+        Take your time ,click around, and make yourself at home.
+      </p>
+    </section>
+    <section id="livestock" class="livestock-section">
+      <h2>Livestock Production</h2>
+      <p>
+        Tala AgroTech provides innovative solutions for managing livestock,
+        ensuring their health and productivity while promoting sustainable
+        practices.
+      </p>
+      <p><a href="info/note1">Learn more about our livestock solutions</a></p>
+      <h3>EXOTIC CATTLE BREEDS</h3>
+      <h4>a) Friesian (Holstein-Friesian)</h4>
+      <p>
+        • The breed originated from Holland and was imported to Kenya in 1908.
+        Several bloodlines have been imported from Europe, America and Israel.
+        The Kenya Holstein-Friesian, through adaptation overtime and crossing
+        with local lines, produces a fair amount of milk. The Holstein-Friesian
+        is the largest and most populous dairy cattle breed in Kenya
+        predominantly found in the highlands. The breed has been crossed with
+        the Sahiwal and Improved Kenyan Boran to produce excellent dual-purpose
+        crosses that are suitable for the lowlands and semi-arid areas.
+        <br />
+        • The breed is continuously being improved using local and imported
+        semen and is promoted by the Hostein-Friesian Breeders’ Society of Kenya
+        (HFBSK) which is the custodian of the breed standards. The breed is
+        raised under various production systems ranging from high input
+        zero-grazing to semi-zero systems.
+      </p>
+
+      <h4>b) Ayrshire</h4>
+      <p>
+        • The breed was introduced to Kenya in 1908 from South Africa. It has
+        been developed over the last century through introduction of bloodlines
+        from Europe and America. The Ayrshire cattle Breed society is the
+        custodian of the breed standards and promotes the breed.
+        <br />
+        • Ayrshire is the second largest and populous of the dairy cattle breeds
+        in Kenya and widely distributed in medium to high rainfall regions. The
+        breed is raised under various production systems ranging from high input
+        zero-grazing to semi-zero and free-range systems. The breed is fairly
+        hardy with high feed conversion efficiency, and adaptable to varied
+        agro-ecological zones, relatively tolerant to most tropical diseases and
+        adapted to solar radiation while exhibiting minimal congenital diseases.
+      </p>
+      <h4>c) Guernsey</h4>
+      <p>
+        • The Guernsey originated on the small Isle of Guernsey, situated in the
+        English Channel just off the coast of France. It was introduced to Kenya
+        in 1930’s and has been developed for milk production. The breed is
+        mainly found in central highlands and parts of Rift Valley with a fair
+        population domiciled at ADC and Mukumu farms. Guernsey population in
+        Kenya has been reducing over years because of low utilization. The
+        Guernsey breed society is the custodian of the breed standards and
+        promotes uptake of the breed. The breed’s attributes include moderate
+        daily feed requirements, good feed conversion efficiency, early
+        reproductive maturity, good calving ease and temperament.
+        <br />
+        • The breed is known to perform well under various production systems
+        ranging from high input zero-grazing to semi zero-grazing system. It is
+        more tolerant to heat stress and diseases than other dairy breeds in the
+        country
+      </p>
+      <h4>d) Jersey</h4>
+      <p>
+        • The breed originated from the Jersey Island of the coast of France. It
+        was introduced to Kenya in 1920 by the white settlers. Jersey breed is
+        the third largest among the four exotic dairy cattle populations in
+        Kenya. The herds are found mostly in Nairobi area, coastal region,
+        Kiambu and Nakuru counties. The Jersey Breed Society of the Kenya is the
+        custodian of the breed standards and its promotion. The breed is ideal
+        for small-holder dairy producers where land parcels are small.
+        <br />
+        • The breed is known to perform well under various production systems
+        ranging from high input zero grazing to semi-zero system. A Jersey cow
+        in milk is able to sustain itself without losing body condition
+        throughout the lactation period. The Jersey is hardy and adapted to
+        varied Agro-Ecological Zones. It has hard black feet that are less prone
+        to lameness. They are well-known for their high feed conversion
+        efficiency and produce high quality milk rich in fat, protein, minerals
+        and trace elements and has relatively low feed requirements. The breed
+        is suitable for cross breeding/ improving local breeds due to its small
+        size.
+      </p>
+      <h3>INDIGENOUS CATTLE BREEDS</h3>
+      <h4>a) Maasai Zebu</h4>
+      <p>
+        • Maasai Zebu is predominantly found in southern Kenya extending to
+        north-east Tanzania with close association with the Maasai community.
+        Comparatively, it is the largest of all SEAZ types in Kenya. It is
+        mainly kept for milk and only slaughtered during special social
+        ceremonies.
+      </p>
+      <h4>b) Kamasia/Samburu zebu</h4>
+      <p>
+        • Kamasia zebu is predominantly found in central Kenya plains within
+        Samburu County. It has long been kept by the Samburu community. Few
+        populations are also found in Laikipia and Baringo counties. It has a
+        cervical-thoracic hump. Tolerant to tick-borne diseases, drought and can
+        walk long distances in search of water and pasture. Mainly kept for milk
+        and meat.
+      </p>
+      <h4>c) Winam or Kavirondo Zebu</h4>
+      <p>
+        • Winam Zebu is mainly found in western Kenya in the lowlands of the
+        Lake Victoria basin, kept by the Luo and Luhya communities. It is
+        comparatively, the smallest of all SEAZ with varied horn shapes, sizes
+        and orientation. There is a notable variance in hump size and position.
+        It is tolerant to tick-borne diseases and helminthes. Kept for draft
+        (tillage), milk and sporting.
+      </p>
+      <h4>d) Nandi Zebu</h4>
+      <p>
+        • Nandi zebu is predominantly found in north rift region, with the Nandi
+        community. The breed is endangered due breed replacement, upgrading
+        andort), milk and meat.
+      </p>
+      <h4>e) Watende Zebu</h4>
+      <p>
+        • The Watende zebu are found to the south of Lake Victoria basin in
+        Migori (Kuria) county. It is named after the Watende (Kuria) community.
+        It is tolerant to many diseases and kept for draft, milk and meat.
+        Mature body frames are thin, shallow but long with relatively long
+        horns.
+      </p>
+      <h4>f) Low land or Coastal Zebu</h4>
+      <p>
+        • Mainly found to the south-west and east of Kenya. Its is comprised of
+        four distinguishable types: the Taita Taveta, Giriama (Tuni), Duruma and
+        Kamba zebu-types. The Kamba zebu is kept by Kambas in Eastern Kenya. It
+        has large irregular humps pyramid- shaped, some have cervico-thoracic
+        humps. Tait Taveta, Duruma and Giriama (Tuni) zebu-types are kept in the
+        coastal counties of Kenya (Taita Taveta, Kwale and Kilifi). They have
+        varoius horn shapes and hump sizes but some are polled. They all have
+        pendulous dewlap. They are mainly kept for draft (tillage and
+        transp!--livestock section -->
+      </p>
+
+      <h4>g) Teso Zebu</h4>
+      <p>
+        • The Teso zebu is found in western Kenya, Busia county. They come in
+        various coat colours with black, black/white being common. They are
+        relatively big in body size with deep chest and pendulous ears. The
+        dewlap is present in varying sizes. It is mainly used for draft
+        (tillage), milk and meat. Tolerant to tick-borne diseases and adapted to
+        a range of environmental conditions and terrains.
+      </p>
+      <h4>h) Turkana and Karapokot Zebu</h4>
+      <p>
+        • Found in North-western region of Kenya with the Turkana tribe. Comes
+        with varying coat shades brown/ red to darkish brown. It is the most
+        adapted of all zebu-types in east Africa. The animals are able to walk
+        through rugged terrains under high temperatures in search of water and
+        pastures. Karapokot are closely related to Turkana zebu only that they
+        are kept by the Pokot (West Pokot and Baringo) and Karamoja community in
+        Uganda.
+        <br />
+        • Mature males have large dome-shaped humps. They have large dewlap,
+        umbilical fold and pendulous sheath. They are kept for milk and meat
+      </p>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <h2>Our Projects</h2>
+      <div class="projects-container">
+        <!-- Project 1 -->
+        <div class="project-item">
+          <h3>Smart Irrigation System</h3>
+          <p>
+            An automated irrigation system that optimizes water usage based on
+            soil moisture levels and weather forecasts.
+          </p>
         </div>
-      </section>
-  
-      <!-- Contact Section -->
-      <section id="contact" class="contact-section">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or would like to collaborate, please reach out to us at
-</body>
+        <!-- Project 2 -->
+        <div class="project-item">
+          <h3>Crop Monitoring Drone</h3>
+          <p>
+            A drone equipped with sensors to monitor crop health and provide
+            real-time data to farmers.
+          </p>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-item">
+          <h3>Automated Harvesting Robot</h3>
+          <p>
+            A robot designed to assist with harvesting crops efficiently and
+            reduce labor costs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <p>
+        If you have any questions or would like to collaborate, please reach out
+        to us at ;<Email:info@talagrotech.com
+        ></Email:info@talagrotech.com> Phone: +254746325884
+      </p>
+    </section>
+  </body>
 </html>

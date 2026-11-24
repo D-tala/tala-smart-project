@@ -1,0 +1,177 @@
+:root {
+  --primary-color: #4891ff;
+  --light-color: #f4f4f6;
+  --dark-color: #111;
+  --green-color: #0b7a3d;
+}
+body {
+  font-family: "poppins", sans-serif;
+  background-color: #f5f5dc;
+  font-size: 12px;
+  line-height: 1.5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f6fa;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background: #142b4a;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 25px 15px;
+  overflow-y: auto;
+  transition: 0.3s;
+  display: block;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 35px;
+  padding: 0 10px;
+}
+
+.logo-icon {
+  background: white;
+  color: #142b4a;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.logo h2 {
+  font-size: 18px;
+}
+
+.logo p {
+  font-size: 11px;
+  color: #b9c8d9;
+  margin-top: 4px;
+}
+
+/* Menu heading */
+.menu-heading {
+  font-size: 11px;
+  color: #9aadc4;
+  margin: 20px 12px 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Menu links */
+.menu a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 14px;
+  margin-bottom: 6px;
+  color: #d7e1ed;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.menu a i {
+  width: 20px;
+  font-size: 16px;
+}
+
+.menu a:hover,
+.menu a.active {
+  background: #244b75;
+  color: white;
+}
+
+.menu a.active {
+  border-left: 4px solid #38bdf8;
+}
+
+/* Main content */
+.main-content {
+  margin-left: 260px;
+  padding: 25px;
+}
+
+.topbar {
+  background: white;
+  padding: 18px 22px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px #0000000a;
+}
+
+.topbar h3 {
+  color: #142b4a;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #142b4a;
+}
+
+.profile i {
+  font-size: 24px;
+}
+
+.welcome {
+  margin-top: 30px;
+  color: #142b4a;
+}
+
+.welcome p {
+  margin-top: 8px;
+  color: #64748b;
+}
+
+/* Mobile */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #142b4a;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+    z-index: 1000;
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

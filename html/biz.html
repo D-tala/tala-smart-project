@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biashara memmory -main menu</title>
+    <link rel="stylesheet" href="CSS/biz.css" />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="logo">
+        <div class="logo-icon">
+          <i class="fas fa-wallet"></i>
+        </div>
+
+        <div>
+          <h2>BIASHARA</h2>
+          <p>MEMORY MANAGEMENT</p>
+        </div>
+      </div>
+
+      <p class="menu-heading">Main Menu</p>
+
+      <nav class="menu">
+        <a href="#" class="active">
+          <i class="fas fa-chart-pie"></i>
+          Dashboard
+        </a>
+
+        <a href="#">
+          <i class="fas fa-shopping-cart"></i>
+          Sales
+        </a>
+
+        <a href="#">
+          <i class="fas fa-box"></i>
+          Inventory
+        </a>
+
+        <a href="#">
+          <i class="fas fa-money-bill-wave"></i>
+          Expenses
+        </a>
+
+        <a href="#">
+          <i class="fas fa-users"></i>
+          Customers
+        </a>
+
+        <a href="#">
+          <i class="fas fa-hand-holding-dollar"></i>
+          Debt Management
+        </a>
+
+        <a href="#">
+          <i class="fas fa-truck"></i>
+          Suppliers
+        </a>
+
+        <a href="#">
+          <i class="fas fa-file-invoice"></i>
+          Invoices & Receipts
+        </a>
+
+        <a href="#">
+          <i class="fas fa-chart-line"></i>
+          Reports & Analytics
+        </a>
+
+        <a href="#">
+          <i class="fas fa-user-tie"></i>
+          Employees
+        </a>
+      </nav>
+
+      <p class="menu-heading">System</p>
+
+      <nav class="menu">
+        <a href="#">
+          <i class="fas fa-cog"></i>
+          Settings
+        </a>
+
+        <a href="#">
+          <i class="fas fa-sign-out-alt"></i>
+          Logout
+        </a>
+      </nav>
+    </aside>
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <header class="topbar">
+        <button class="menu-toggle" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <h3>Business Dashboard</h3>
+
+        <div class="profile">
+          <i class="fas fa-user-circle"></i>
+          <span>Administrator</span>
+        </div>
+      </header>
+
+      <section class="welcome">
+        <h1>Welcome to Biashara Memory</h1>
+        <p>Manage your business operations in one place.</p>
+      </section>
+    </main>
+
+    <script>
+      // Mobile menu toggle
+      function toggleMenu() {
+        document.getElementById("sidebar").classList.toggle("show");
+      }
+
+      // Highlight selected menu item
+      const menuLinks = document.querySelectorAll(".menu a");
+
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          menuLinks.forEach((item) => {
+            item.classList.remove("active");
+          });
+
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

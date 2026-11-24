@@ -1,0 +1,9 @@
+h1 {
+  font-size: 16px;
+  text-decoration-color: rgba(red, green, blue, alpha);
+  font-weight: 200;
+  border-left: blue;
+  border-right: yellow;
+  border-top: orange;
+  border-bottom: outset;
+}

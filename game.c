@@ -27,7 +27,7 @@ int main() {
         printf("\nChoose your move:\n");
         printf("1. Rock\n");
         printf("2. Paper\n");
-        printf("3. Scissors\n");2
+        printf("3. Scissors\n");
         printf("Enter your choice: ");
         scanf("%d", &player);
 
@@ -82,7 +82,6 @@ int main() {
     else if (playerScore < computerScore)
         printf("Computer wins the game!\n");
     else
-        printf("The game ended in a draw!\n");
 
     printf("\nThanks for playing!\n");
 
